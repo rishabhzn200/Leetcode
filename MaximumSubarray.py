@@ -27,9 +27,8 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
-        n = nums.__len__();
 
-        if n == 1:
+        if (n := nums.__len__()) == 1:
             return nums[0]
 
         # Divide the problem in to subproblem

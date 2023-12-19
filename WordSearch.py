@@ -71,8 +71,7 @@ class Solution:
         wordFound = False
         for eachws in wsList:
             #we found 1st matching letter. Find other letters using recursion
-            wordFound = self.dfs(board, word, eachws[0], eachws[1])
-            if wordFound == True:
+            if (wordFound := self.dfs(board, word, eachws[0], eachws[1])) == True:
                 return True
 
         if wordFound == False:

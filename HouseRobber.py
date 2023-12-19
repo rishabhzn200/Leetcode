@@ -17,8 +17,7 @@ class Solution(object):
         :rtype: int
         """
 
-        l = len(nums)
-        if l == 0:
+        if (l := len(nums)) == 0:
             return 0
         if l == 1:
             return nums[0]

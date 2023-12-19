@@ -39,8 +39,7 @@ class Solution:
 
 
 
-        res = balance(root)
-        if res != -1:
+        if (res := balance(root)) != -1:
             return True
         return False
 

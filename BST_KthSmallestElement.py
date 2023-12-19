@@ -37,12 +37,10 @@ class Solution:
 
             curr = traverse(root.left, k, curr)
 
-            curr = curr + 1
-            if curr == k:
+            if (curr := curr + 1) == k:
                 return curr
 
-            curr = traverse(root.right, k)
-            if curr == k:
+            if (curr := traverse(root.right, k)) == k:
                 return curr
 
             return curr

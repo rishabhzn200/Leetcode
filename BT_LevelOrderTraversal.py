@@ -41,9 +41,8 @@ class Solution(object):
             if len(q1) == 0:
                 break
 
-            x = q1.pop(0)
 
-            if x == None:
+            if (x := q1.pop(0)) == None:
                 if len(q1) != 0:
                     q1.append(None)
                 bftList.append(nodeListInSameLevel[:])

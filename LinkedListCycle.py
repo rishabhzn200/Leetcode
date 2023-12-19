@@ -30,8 +30,7 @@ class Solution(object):
                 return True
 
             p1 = p1.next
-            p2 = p2.next
-            if p2 == None:
+            if (p2 := p2.next) == None:
                 return False
             p2 = p2.next
         return False
